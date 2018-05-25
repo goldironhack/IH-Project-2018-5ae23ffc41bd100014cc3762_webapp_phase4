@@ -1,9 +1,110 @@
-body {
-    color: #444;
-    font-family: Arial, sans-serif;
+.sidebar a{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #6D7993;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none  
+} 
+
+.dropdown-btn {
+    
+
+  margin-top:20px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  display: block;
+  border: none;
+  
+  background-color: #6D7993;;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
-.container {
-    width: 100%;
-    max-width: 960px;
+
+.sidebar a:hover{
+    
+    color: black;
+}
+
+.sidebar dropdown-btn:hover {
+  color: white;
+}
+
+
+.active {
+  background-color: #6D7993;
+  color: white;
+}
+
+.dropdown-container {
+  display: none; 
+  background-color: #F0F1F4;
+  padding-left: 8px;
+}
+
+#mapContainer{
+    height: 100%;
+    width : 100%;
+}
+
+.row.content {
+    height: 500px;
+}
+
+.sidebar {
+  background-color: #D5D5D5;
+  height : 100%;
+}
+
+.btn.btn-md.btn-primary{
+    background-color: #6D7993;
+}
+
+#title{
+    color:#6D7993;
+    font-family: 'Roboto'; 
+}
+
+#getDistricts{
+    margin-top:20px;
+    font-family: 'Roboto';
+}
+
+#getNeighborhoods{
+    margin-top:20px;
+    font-family: 'Roboto';
+}
+
+#Disrank{
+    margin-top:20px;
+    font-family: 'Roboto';
+}
+
+/* Responsive for small screens */
+
+@media screen and (max-width: 767px) { 
+ 
+    .sidebar {
+        height: 300px;
+        background-color: #D5D5D5;
+    }
+    
+    .row.content {
+        height: 100px;
+    }
+    
+    #mapContainer{
+        height :500px;
+        width : 100%;
+    }
 }
